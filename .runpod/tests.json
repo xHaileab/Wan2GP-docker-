@@ -1,0 +1,16 @@
+{
+  "tests": [
+    {
+      "name": "basic_prompt_test",
+      "input": {
+        "prompt": "Hello world"
+      },
+      "timeout": 60000
+    }
+  ],
+  "config": {
+    "gpuTypeId": "NVIDIA A100",
+    "gpuCount": 1,
+    "allowedCudaVersions": ["12.1"]
+  }
+}

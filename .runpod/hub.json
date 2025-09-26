@@ -1,0 +1,11 @@
+{
+  "title": "Wan2GP Docker",
+  "description": "FastAPI wrapper exposing Wan2GP as a serverless API",
+  "type": "serverless",
+  "category": "video",
+  "config": {
+    "runsOn": "GPU",
+    "containerDiskInGb": 20,
+    "env": []
+  }
+}
