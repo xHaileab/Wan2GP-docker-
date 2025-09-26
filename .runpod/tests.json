@@ -1,10 +1,8 @@
 {
   "tests": [
     {
-      "name": "basic_prompt_test",
-      "input": {
-        "prompt": "Hello world"
-      },
+      "name": "basic_test",
+      "input": {},
       "timeout": 60000
     }
   ],

@@ -4,8 +4,9 @@
   "type": "serverless",
   "category": "video",
   "config": {
-    "runsOn": "GPU",
+    "runsOn": "gpu",
     "containerDiskInGb": 20,
+    "entrypoint": "server.py",
     "env": []
   }
 }
