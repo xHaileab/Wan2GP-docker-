@@ -1,5 +1,5 @@
 # Use NVIDIA CUDA base image with PyTorch
-FROM nvidia/cuda:12.1.1-cudnn8-runtime-ubuntu22.04
+FROM nvidia/cuda:12.1.1-cudnn8-devel-ubuntu22.04
 
 # Set working directory
 WORKDIR /app
