@@ -14,6 +14,7 @@ COPY . /app
 
 # Install Python dependencies
 RUN pip3 install --upgrade pip
+RUN pip3 install torch>=2.4.0 torchvision>=0.19.0 torchaudio --index-url https://download.pytorch.org/whl/cu121
 RUN pip3 install -r requirements.txt
 
 # Expose API port
