@@ -19,6 +19,10 @@ RUN pip3 install packaging
 RUN pip3 install psutil
 RUN pip3 install --no-build-isolation -r requirements.txt
 
+# Download models
+RUN pip3 install "huggingface_hub[cli]"
+RUN huggingface-cli download Wan-AI/Wan2.2-I2V-A14B --local-dir /app/models
+
 # Expose API port
 EXPOSE 8000
 
