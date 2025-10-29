@@ -37,4 +37,5 @@ MANIFEST
 
 # Logs and temp files
 *.log
-*.txt
+LICENSE.txt
+build-logs*.txt
