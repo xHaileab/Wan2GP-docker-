@@ -45,5 +45,13 @@ async def generate_video(
     return {"status": "success", "output": output_path}
 
 if __name__ == "__main__":
+    # Download models if they don't exist
+    model_dir = "/app/models"
+    if not os.path.exists(model_dir):
+        print("Downloading models...")
+        from huggingface_hub import snapshot_download
+        snapshot_download(repo_id="Wan-AI/Wan2.2-I2V-A14B", local_dir=model_dir)
+        print("Model download complete.")
+
     os.makedirs("/app/tmp", exist_ok=True)
     uvicorn.run(app, host="0.0.0.0", port=8000)
